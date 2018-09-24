@@ -13,7 +13,7 @@ cwd = os.getcwd()
 repoPath = sys.argv[1]
 print("[INFO]: The build process will concatenate the files BuildComponent_1, BuildComponent_2 and BuildComponent_3 into output file under bin")
 print("[INFO]:Checking the repo path")
-os.chdir(repoPath)
+#os.chdir(repoPath)
 
 inputfile1 = open('BuildComponent_1.txt')
 inputfile2 = open('BuildComponent_2.txt')
