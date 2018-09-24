@@ -1,0 +1,6 @@
+1. Install Python 3.4; 
+2. Install Git Bash for Windows (Used Version: )
+
+3. Make sure Python and Git are added in PATH environment variable
+
+
