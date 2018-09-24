@@ -5,27 +5,29 @@ import datetime
 
 OUTPUT = "output_" + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + ".txt"
 
-print("[INFO] : Build process started")
+print("**********************************************************")
+print("[INFO]: Build process started")
+print("**********************************************************")
 
 cwd = os.getcwd()
 repoPath = sys.argv[1]
 #os.chdir(repoPath)
 
-inputfile1 = open('i.txt')
-inputfile2 = open('am.txt')
-inputfile3 = open('myName.txt')
+inputfile1 = open('BuildComponent_1.txt')
+inputfile2 = open('BuildComponent_2.txt')
+inputfile3 = open('BuildComponent_3.txt')
 if not os.path.exists('bin'):
 	os.mkdir('bin')
 outputfile = open('bin' + '\\' + OUTPUT, 'w+')
 
 for line in inputfile1:
-    print("[INFO] : Processing data from file i.txt")
+    print("[INFO] : Processing data from file BuildComponent_1.txt")
     outputfile.write(line)
 for line in inputfile2:
-    print("[INFO] : Processing data from file am.txt")
+    print("[INFO] : Processing data from file BuildComponent_2.txt")
     outputfile.write(line)
 for line in inputfile3:
-    print("[INFO] : Processing data from file myName.txt")
+    print("[INFO] : Processing data from file BuildComponent_3.txt")
     print("[INFO] : Preparing the file " + OUTPUT)
     outputfile.write(line)
 
@@ -38,5 +40,5 @@ outputfile.close
 os.chdir(cwd)
 
 print("**********************************************************")
-print("build.bat completed successfully")
+print("[INFO]: build.bat completed successfully")
 print("**********************************************************")
