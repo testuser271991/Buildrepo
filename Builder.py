@@ -11,8 +11,8 @@ print("**********************************************************")
 
 cwd = os.getcwd()
 repoPath = sys.argv[1]
-#os.chdir(repoPath)
-#
+os.chdir(repoPath)
+
 inputfile1 = open('BuildComponent_1.txt')
 inputfile2 = open('BuildComponent_2.txt')
 inputfile3 = open('BuildComponent_3.txt')
