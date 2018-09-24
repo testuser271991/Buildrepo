@@ -20,15 +20,17 @@ if not os.path.exists('bin'):
 	os.mkdir('bin')
 outputfile = open('bin' + '\\' + OUTPUT, 'w+')
 
-for line in inputfile1:
-    print("[INFO] : Processing data from file BuildComponent_1.txt")
+print("[INFO] : Processing data from file BuildComponent_1.txt")
+for line in inputfile1:    
     outputfile.write(line)
-for line in inputfile2:
-    print("[INFO] : Processing data from file BuildComponent_2.txt")
+
+print("[INFO] : Processing data from file BuildComponent_2.txt")
+for line in inputfile2:    
     outputfile.write(line)
+
+print("[INFO] : Processing data from file BuildComponent_3.txt")
+print("[INFO] : Preparing the file " + OUTPUT)
 for line in inputfile3:
-    print("[INFO] : Processing data from file BuildComponent_3.txt")
-    print("[INFO] : Preparing the file " + OUTPUT)
     outputfile.write(line)
 
 	
